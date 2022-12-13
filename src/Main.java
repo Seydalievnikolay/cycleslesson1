@@ -37,20 +37,25 @@ public class Main {
     }
     public static void task5(){
         System.out.println("Задача 5");
-        for (int x = 1904; x <= 2096; x = x + 4){
-            System.out.println( x + " год является високосным");
+        for (int year = 1904; year <= 2096; year = year + 4){
+            System.out.println( year + " год является високосным");
         }
     }
     public static void task6(){
         System.out.println("Задача 6");
         for (int x = 7; x <= 98; x = x + 7){
-            System.out.println( x );
+            System.out.print( x + " " );
+        } {
+            System.out.println();
         }
     }
     public static void task7(){
         System.out.println("Задача 7");
         for (int x = 1; x <= 512; x = x*2){
-            System.out.println(x);}
+            System.out.print(x + " ");
+        } {
+            System.out.println();
+        }
     }
     public static void task8(){
         System.out.println("Задача 8");
@@ -64,10 +69,10 @@ public class Main {
     public static void task9(){
         System.out.println("Задача 9");
         int contribution = 29000;
-        int total = 0;
+        double total = 0;
+        double percent = 0.01;
         for(int x = 1; x <= 12; x++){
-            total=total+total/100;
-            total=total+contribution;
+            total= (total+contribution) * (1 + percent);
             System.out.println("Месяц " + x + " ,сумма накоплений равна " + total + " рублей");
         }
     }
