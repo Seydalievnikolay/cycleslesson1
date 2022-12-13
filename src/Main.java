@@ -73,10 +73,11 @@ public class Main {
     }
     public static void task10(){
         System.out.println("Задача 10");
-        for (int y = 1; y <= 10; y = y + 1)
-        {for (int x = 2; x <= 20; x = x + 2){
-            System.out.println("2 * " + y + " = " + x );
-        }
+        int x = 2;
+        int total = 0;
+        for (int y = 1; y <= 10; y = y + 1){
+            total = y * x;
+            System.out.println(x + "*" + y + " = " + total );
         }
     }
 }
